@@ -75,7 +75,7 @@ describe("RomanNumeralTranslator", function () {
     });
 
     it("should not use smaller symbols first", function () {
-      assert.notEqual("III", test.parseInteger(4));
+      assert.notEqual("IIII", test.parseInteger(4));
     });
 
     it("should do complex parsing", function () {
