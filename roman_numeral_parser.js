@@ -76,17 +76,20 @@ class RomanNumeralTranslator {
 
     // run through hashmap from largest to smallest symbol
     for (let [symbol, intValue] of this.romanNumeralMap) {
+      // end iteration when we've reached zero
       if (number == 0) {
         break;
       }
 
+      // get quotient to know when to update output array
       var quotient = Math.floor(number / intValue);
+      // get remainder to keep track of what's left
       var remainder = number % intValue;
 
+      // set number to the remainder so we dwindle down the result
       number = remainder;
-      if (quotient) {
-        romanNumeralArr.push(symbol.repeat(quotient));
-      }
+
+      romanNumeralArr.push(symbol.repeat(quotient));
     }
     return romanNumeralArr.join("");
   }
