@@ -1,0 +1,11 @@
+{
+  "name": "casestudy",
+  "version": "1.0.0",
+  "description": "Roman Numeral Translation Case Study",
+  "main": "roman_numeral_parser.js",
+  "scripts": {
+    "test": "mocha roman_numeral_parser.js"
+  },
+  "author": "David Archuleta",
+  "license": "ISC"
+}
